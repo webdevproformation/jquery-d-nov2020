@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section1">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </section>
+    <!-- section.section2>p*3 -->
+    <section class="section2">
+        <p></p>
+        <p></p>
+        <p></p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    // remplir  le premier p de la première section avec le  texte "titre principal"
+        $(".section1 p").first().html("titre principal")
+        $(".section1 p").eq(0).html("titre principal")
+    // remplir  le troisième p de la première section avec le texte troisième
+        $(".section1 p").eq(2).html("troisième")
+    // remplir le dernier p de la deuxième section avec le texte fin
+        $(".section2 p").last().html("fin")
+    // remplir le premier p de la deuxième section avec le texte debut + modifier la taille de police de cet élément à 35px
+        $(".section2 p").first().html("début").css("font-size" , 35);
+    </script>
+</body>
+</html>
+<!-- 12-manipulation-dom.html -->

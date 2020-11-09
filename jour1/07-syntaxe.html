@@ -1,0 +1,43 @@
+<!-- 07-syntaxe.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <!-- ul>li*3 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // en js de base => remplir tous les paragraphes de la page avec le même texte => bonjour 
+        let p = document.querySelectorAll("p"); // sélectionner tous les p
+        for(let i = 0 ; i < p.length ; i++){ // boucle for 
+            p[i].innerHTML = "Bonjour";
+        }
+        // jquery 
+        $("p").html("texte modifié");
+        // ma fonction $() fait en plus une boucle 
+        $("li").html("bonjour");
+        //function $(){ }
+        // javascript ou jquery => langages qui sont dépendant de html 
+        // pas de problème pour mixer du javascript de base avec du jquery 
+        // si tu veux utiliser jquery tu dois OBLIGATOIREMENT avec la balise script d'installation de jquery 
+    </script>
+    <script src="07-script.js"></script>
+    <!-- rdv 13h39 pour la suite de la découverte de jquery !!! bon appétit !! -->
+    <!-- rebonjour tout le monde !!!
+        avez vous des questions ?? 
+    -->
+</body>
+</html>
+<!-- 08-syntaxe-suite.html -->

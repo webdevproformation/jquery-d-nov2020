@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p> 
+    <!-- installer jquery > jquery.com >download > cdn  -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
+    <script>
+        // pour bien jquery => fait un peu avant pour comprendre tout l'intérêt de cette librairie
+        document.querySelector("p:nth-of-type(2)")
+        $("p").eq(1)
+        // jquery permet de sélectionner plus facile (écrire moins) n'importe quelle élément du DOM => dans la page web 
+        // chainage 
+        // js natif => 3 instructions pour réaliser mes modifications
+        document.querySelector("h2").innerHTML = "texte"
+        document.querySelector("h2").style["color"] = "yellow"
+        document.querySelector("h2").style["font-size"] = "15px"
+        // jquery 1 seule instruction => chainage 
+        $("h2").html("texte").css("color", "yellow").css("font-size", 15);
+        $("p").eq(5).css("border","1px solid black");
+        // automatique $() fait une boucle 
+        // en js de base => 3 instructions si je veux modifier tous les p de la page
+        let p = document.querySelectorAll("p"); // array 
+        let tableau = ["un" , "deux", "trois"];
+        for( let i = 0 ; i < p.length ; i++){
+            p[i].innerHTML = "du texte <br> toto"
+        }
+        // en jquery 1 seule va suffire => jquery fait une boucle AUTOMATIQUE
+        $("p").html("du texte <br> toto");
+        // write less do more 
+        // 3 syntaxes de bases de jquery
+        // https://webdevpro.net/raccourcis-clavier-pour-coder-sur-macos/
+    </script>
+</body>
+</html>
+<!-- 
+    09-method.html
+
+-->

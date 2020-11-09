@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- h1.bonjour>lorem4 -->
+    <h1 class="bonjour">coucou</h1>
+    <!-- p*4>lorem3 -->
+    <p>Lorem, ipsum dolor.</p>
+    <p>Laborum, eveniet porro!</p>
+    <p>Provident, cum cumque!</p>
+    <p>Eveniet, eum modi.</p>
+    <!-- img#intro -->
+    <img src="https://via.placeholder.com/200x100" alt="" id="intro">
+    <!--  installer jquery 
+        si officiel jquery.com > download > section CDN > cdn de google
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- pouvoir le résultat de ma page html > le plugin Go live -->
+    <script>
+        // commentaire monoligne 
+        /*
+            commentaire multiligne 
+            attention ces deux syntaxes doivent être utilisées DANS la balise script 
+        */
+        // en js de base => si vous voulez modifier une balise html vous devez écrire la ligne de code suivante
+        document.querySelector(".bonjour").innerHTML = "Nouveau texte";
+        // modifier le contenu textuel de la balise ayant la class bonjour 
+        // ma même chose modifier le texte dans la balise mais en JQUERY 
+
+        $(".bonjour").html("texte");
+        // js Ctrl + S 
+
+        // en js de base => Modifier 
+        document.querySelector("p:nth-of-type(2)").innerHTML = "deuxième p";
+        // ajouter / supprimer des éléments dans la page web 
+        // la même action mais JQUERY => plus court // plus clair
+        $("p").eq(1).html("modifié le p");
+
+        // je veux modifier la couleur de police du troisième p dans la page 
+        // en js de base 
+        document.querySelector("p:nth-of-type(3)").style["color"] = "red";
+        document.querySelector("p:nth-of-type(3)").style.color = "red";
+
+        // équivalent en jquery
+        $("p").eq(2).css("color", "pink");
+
+        // pour le dernier p dans la page 
+        // modifier son texte => dernier p 
+        // modifier son style => taille de police de 30px
+
+        // js de base 
+        document.querySelector("p:nth-of-type(4)").innerHTML = "dernier p";
+        document.querySelector("p:nth-of-type(4)").style["font-size"] = "30px";
+
+        // la même chose mais avec jquery
+        $("p").eq(3).html("autre texte").css("font-size", 12);
+        // slogan de jquery => Write less DO more !! 
+
+        // ajouter une bordure à mon image
+        // en js de base
+        document.querySelector("#intro").style["border"] = "2px solid black";
+
+        // jquery
+        $("#intro").css("border", "2px dotted green");
+        // équivalent beaucoup plus court !!! 
+    </script>
+</body>
+</html>
+<!-- 
+    créer le fichier 06-exo.html
+    h1 qui a la class presentation et pas de texte dedans
+    3 paragraphes 
+        le 1er p class first
+        le 2eme p class second 
+        le 3eme p class last 
+    installer jquery 
+    réaliser les modifications suivantes avec jquery
+        a remplir la balise h1 avec le texte suivant : Découverte de jquery
+        b remplir le 2ème p avec le texte suivant : paragraphe présentation
+        c remplir le 1er p avec le texte suivant : First p 
+        d modifier le style du 1er p : taille de police de 20px
+        e remplir le dernier p avec du texte => dernier p et lui mettre une bordure de 2px solid rouge
+    => 12h07 pour finir l'exo
+-->

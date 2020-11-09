@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- balise spéciale pour écrire du javascript  script -->
+    <script>
+        // vous allez pouvoir écrire du javascript
+        // vous ne pouvez pas écrire de javascript dans une autre balise 
+        // h1 , p a ul li 
+        // javascript directement dans la page web 
+    </script>
+    <!-- autre manière d'ajouter du javascript dans vos pages web créer un fichier .js 
+    créer le fichier   04-script.js
+    pour pouvoir utiliser ce fichier .js qui est à l'extérieur du fichier html en cours d'édition => script avec l'attribut src
+    -->
+    <script src="04-script.js"></script>
+    <!-- attention vous ne pouvez pas avoir la syntaxe suivante -->
+    <script src="04-script.js"> 
+        // écrire du javascript dans la balise
+    </script>
+    <!-- la balise script ne fonctionne pas si j'appelle un fichier extérieur ET que j'écris du js dedans 
+    c'est soit l'un soit l'autre 
+    -->
+    <!-- 
+        jquery est une librairie => fichier qui va contenir plein de code 
+        => sur le site officiel jquery.com > download
+        descendre jusqu'à la section CDN
+        Content Data Network : Serveur qui contiennent
+        du code sources et qui sont dédiés juste à donner le code pour d'autres site internet  
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 
+        voici comment on installe jquery depuis un CDN 
+        si vous avez besoin d'utiliser dans une de vos pages web
+        vous devez refaire la même manipulation 
+    -->
+</body>
+</html>
+<!-- 
+    créer le fichier 05-exo.html 
+
+    ce fichier contient les balises suivantes 
+    h1 avec une class bonjour et qui contient 4 mots fictifs
+    4 paragraphes avec 3 mots fictifs
+    image avec un id intro qui a les dimensions suivantes  200 px de largeur et 100 px de hauteur 
+    installer jquery via la balise script 
+-->

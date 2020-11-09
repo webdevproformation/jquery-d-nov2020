@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child{
+            color: blue;
+        }
+        p:nth-child(2){
+            color: red;
+        }
+        p:nth-child(5){
+            color:green;
+        }
+        /* 1 */
+       /*  ul li:nth-child(2) a:nth-child(2){
+            color:yellow;
+        } */
+        .item{
+            color:pink;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Dolore, quos quod.</p>
+    <p class="item">At, iusto iste!</p>
+    <p>Repudiandae, quo magnam?</p>
+    <p>Repudiandae, quo magnam?</p>
+    <ul>
+        <li><a href="">item 1</a> <a href="">item 2</a></li>
+        <li><a href="">item 4</a> <a href="">item 5</a> <a href="">item 6</a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        // en js 0
+        $("li:nth-child(2) a").eq(1).css("color", "pink")
+        $("p:nth-child(3)").css("color", "grey");
+        $("p").eq(2).css("color", "grey");
+        // le css qui est ajouté avec du js va être prioritaire par rapport à du css dans labalise style // fichier .css extérieur 
+    </script>
+</body>
+</html>
+<!-- demain je vous partage tout monde code => github -->

@@ -1,0 +1,85 @@
+Mac OS pour créer un fichier passer par un logiciel
+=> ouvrir visual studio / sélectionner le dossier / créer via le
+bouton dans l'explorateur
+
+-----------------------
+
+Qu'est ce que jQuery ??? 
+
+=> Librairie javascript 
+=> créer en 2006 par John Resig (14 ans)
+=> Librairie qui est spécialisée dans la Manipulation du DOM
+
+=> jquery plein de fonctions qui permettent facilement
+modifier des pages web 
+
+=> le site officiel de la librairie 
+https://jquery.com/
+LE SITE OFFICIEL 
+	2 liens importants 
+		Download => comment installer jquery 
+			dans nos projets web
+		API documentation => mode d'emploi
+			liste de toutes les fonctions
+			disponibles + explication de comment
+			ça marche 
+une page internet 
+=> généré depuis une page .html + css
+
+en + du html et du css => dans firefox / chrome / opera 
+(dans n'importe qu'elle navigateur web) 
+AUTOMATIQUE déclencher javascript => garder une copie
+de ta page web 
+dans un objet global => window => 
+Dans la page web => DOM Manière de stocker la page web
+
+jquery permet de facilement modifier des page web !!! 
+slogan de la librairie : write less do more (écrire moins faire plus)
+
+---------------
+
+jQuery est une librairie très populaire 
+= très utilisée pour des sites
+= et qui dispose d'une énorme communauté de développeur qui l'utilise
+= facile à apprendre 
+document.getElementById()
+
+https://w3techs.com/technologies/overview/javascript_library
+
+=> très utilisée 
+
+---------------
+
+Quelques concurrents à connaitre 
+
+https://script.aculo.us/
+c'est jquery qui est de loin le plus utilisé !
+
+---------------
+
+Outil pour coder => visual studio 
+
+j'aimerai que vous installiez un plugin (extension) 
+=> Live Server
+=> le bouton go live n'apparait que sur les fichiers .txt ou les fichiers .html 
+
+---------------
+rappel / présentation de Emmet 
+extension qui est installée par défaut dans Visual Studio
+extension permet d'écrire du html très très vite 
+attention on ne peut utiliser Emmet que dans des fichiers html 
+
+=> Emmet ( install )
+créer le fichier 02-emmet.html 
+
+
+
+
+
+
+
+
+
+
+
+

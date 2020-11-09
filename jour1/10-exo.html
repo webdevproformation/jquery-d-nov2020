@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ul>li*4 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!-- ol.jour>li*3 -->
+    <ol class="jour">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <!-- ol.annee>li*5 -->
+    <ol class="annee">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // ici je que vais écrire mon jquery
+        //  a remplir le 1er li du ul avec le texte "jquery"
+        $("ul li").first().html("jquery");
+        $("ul li").eq(0).html("jquery");
+        // remplir le 2eme li du ul avec le texte "bootstrap"
+        $("ul li").eq(1).html("bootstrap");
+
+        // remplir tous les li de l'élément avec la class jour avec le texte : "02/12/2019"
+        $(".jour li").html("02/12/2019");
+
+        // pour la dernière liste, remplir le premier li avec le texte : "bonjour"
+        $(".annee li").first().html("bonjour");
+        // pour la dernière liste, remplir le dernier li avec le texte : "final"
+        $(".annee li").last().html("final");
+    </script>   
+
+</body>
+</html>
+<!-- 
+    créer le fichier 11-exo.html 
+    créer 
+        <section></section>
+        section qui a la class section1 et qui contient 5 p
+        section qui a la class section2 et qui contient 3 p
+    installer jquery
+    
+    // remplir  le premier p de la première section avec le  texte "titre principal"
+    // remplir  le troisième p de la première section avec le texte troisième
+    // remplir le dernier p de la deuxième section avec le texte fin
+    // remplir le premier p de la deuxième section avec le texte debut + modifier la taille de police de cet élément à 35px
+-->

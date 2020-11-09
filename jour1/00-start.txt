@@ -1,0 +1,50 @@
+Bonjour tout le monde !!!!
+
+-------------------------
+
+Malik HARRIZ
+malik.h@webdevpro.net
+
+-------------------------
+
+jquery 
+support en ligne : 
+https://formation.webdevpro.net/jquery/
+(dans la barre d'adresse du navigateur pas dans google)
+login : jquery
+mdp : jquery
+
+(en minuscule)
+
+-------------------------
+
+ID REUNION : 386-697-5525
+mot de passe : salle03
+
+-------------------------
+
+sur le bureau de votre ordinateur => dossier jquery
+
+créer un sous dossier jour1 
+pour demain on va créer le dossier jour2 
+
+-------------------------
+
+=> pouvez vous vous présenter ? DAM 
+CDA = Concepteur Développeur Application - Mai
+
+=> Quand avez vous commencez ? DAM 29 sept
+
+DAM => Javascript 
+
+jQuery => Javascript DOM (Document Object Model)
+
+-------------------------
+
+dans le dossier jour1 => premier fichier
+01-presentation.txt
+
+
+
+
+

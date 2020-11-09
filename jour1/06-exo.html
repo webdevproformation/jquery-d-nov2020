@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="presentation"></h1>
+    <p class="first"></p>
+    <p class="second"></p>
+    <p class="last"></p>
+    <!-- installer jquery => jquery.com > download > cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // effectuer des modifications des balises AVANT jquery 
+        $("h1").html("Découverte de jquery");
+        $(".presentation").html("Découverte de jquery");
+        // 2ème
+        $("p").eq(1).html("paragraphe présentation");
+        $(".second").html("paragraphe présentation");
+        // 1er p 
+        $("p").eq(0).html("First p").css("font-size", 20);
+        $(".first").html("First p").css("font-size", 20);
+        // le dernier p
+        $("p").eq(2).html("dernier p").css("border", "2px solid red");
+        $(".last").html("dernier p").css("border", "2px solid red")
+    </script>
+</body>
+</html>
+<!-- 07-syntaxe.html -->
