@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-index="0">Accueil</button>
+    <button data-index="1">Map</button>
+    <button data-index="2">Vidéo</button>
+    <button data-index="3">Liste</button>
+    <div>
+        <h1>Accueil</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, at.</p>
+    </div>
+    <div>
+        <h1>Map</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991440613465!2d2.292287250541269!3d48.85837360856135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1605021836130!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div>
+        <h1>Vidéo</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rALRYBsqET4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div>
+        <h1>Liste</h1>
+        <ul>
+            <!-- li*3>lorem1 -->
+            <li>Lorem.</li>
+            <li>Tempora.</li>
+            <li>Incidunt.</li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        $("div").hide().eq(0).show();
+        $("button").on("click", function(){
+            let indexClique = $(this).data("index");
+            $("div").hide().eq(indexClique).show();
+        })
+    </script>
+</body>
+</html>
+<!-- 15-diaporama.html -->

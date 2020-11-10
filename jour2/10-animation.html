@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Action 1</button>
+    <button>Action 2</button>
+    <button>Action 3</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, debitis!</p>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        // autre intéressant que jquery 
+        // en + de toutes les méthodes 
+        // méthodes qui permettent de faire de l'animation
+        // .show()
+        // .hide()
+        // .toggle()
+        // lorsque je clique sur le 1er bouton => masquer le p
+        $("button").first().click( function(){
+            $("p").hide();
+        });
+        // lorsque je clique sur le 2eme bouton => afficher le p
+        $("button").eq(1).click(function(){
+            $("p").show();
+        });
+        // lorsque je clique sur le 3ème bouton => si le p est masqué il s'afficher // si le p est affiché il se masque
+        $("button").last().click(function(){
+            $("p").toggle();
+        });
+
+        // .fadeIn()
+        // .fadeOut()
+        // .fadeToggle();
+
+        // .slideUp()
+        // .slideDown()
+        // .slideToggle()
+    </script>
+</body>
+</html>
+<!-- 
+    créer le fichier 11-exo.html
+    ce fichier contient trois boutons button Action1 , Action2, Action3
+    un p qui contient 15 mots
+    un image qui a pour dimension largeur 200px x hauteur 300px
+    https://via.placeholder.com/200x300
+    installer jquery
+
+    lorsque vous cliquez sur le bouton 1
+    - élargir l'image de 300px
+    - ajouter une bordure de 2px solid verte
+
+    lorsque vous cliquez sur le bouton 2
+    masquer le paragraphe
+    masquer l'image
+    
+    lorsque vous cliquez sur le bouton 3
+    affiche le paragraphe
+    affiche l'image
+    si vous recliquer sur le bouton 3 
+    masquer le paragraphe
+    masquer l'image    
+-->

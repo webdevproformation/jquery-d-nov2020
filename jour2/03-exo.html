@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- p*5>lorem5 -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Illum minima cumque commodi dolor.</p>
+    <p>Aut ratione praesentium voluptate aspernatur!</p>
+    <p>Totam ipsum eligendi aliquam a?</p>
+    <p>Voluptatem adipisci amet labore. Aperiam.</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        /*
+            - mettre tous les p en couleur texte rouge 
+            - mettre le 1er p sur fond rose
+            - mettre le dernier p sur fond vert
+            - ajouter le 2ème p au début du p un émoji de votre choix
+            - ajouter le 4ème p au à la fin du p un émoji de votre choix
+            - pour le 3ème p ajouter lui la class troisieme et l'attribut id third
+        */
+       $("p").css("color", "red");
+       $("p").first().css("background", "pink");
+       $("p").last().css("background", "green");
+       $("p").eq(1).prepend("🗺️ ");
+       $("p").eq(3).append(" 🕹️");
+       $("p").eq(2).addClass("troisieme").attr("id", "third");
+       $("p").eq(2).attr( "class","troisieme").attr("id", "third");
+       //bon café tout le monde => 10h48 excellent café !!!!
+       // rebonjour !!!! 
+    </script>
+</body>
+</html>
+<!-- 04-css.html -->

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Action 1</button>
+    <button>Action 2</button>
+    <button>Action 3</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, at est sint debitis, dicta excepturi fuga, modi doloribus molestiae corrupti voluptatum nobis. Reiciendis rerum veritatis aperiam exercitationem fugit nihil necessitatibus!</p>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        /*
+            clique sur le bouton 1 => ajouter à la fin du paragraphe le texte "j'ai cliqué sur le bouton 1 avec un emoji"
+            clique sur le bouton 2 => changer la taille de police du paragraphe
+            augmenter de 60% + changer sa couleur en rouge
+            clique sur le bouton 3 => revenir à la taille initial + couleur initiale pour le paragraphe
+        */
+        $("button").first().click( function(){
+           $("p").append("j'ai cliqué sur le bouton 1 💎");
+        });
+        $("button").eq(1).on("click", function(){
+            let style = {
+                "font-size" : "1.6em",
+                "color" : "red"
+            };
+            //let htmlP = $("p").html().slice(0, $("p").html().length - 30);
+            // console.log(htmlP);
+            // "abcd".slice(0, 2) // ab 
+            // $("p").html().slice(0 , $("p").html().length - 30 )
+            // "abcd".length // 4
+            // "bonjour".length // 7
+            // console.log($("p").html().length) // 297 caractères 
+            $("p").css(style) // .html(htmlP);
+        });
+        $("button").last().on("click", function(){
+           let style = {
+               "font-size" : "1em",
+               "color": "black"
+           };
+           $("p").css(style);
+        });
+    </script>
+</body>
+</html>
+<!-- 08-formulaire.html -->

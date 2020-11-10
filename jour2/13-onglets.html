@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button data-index="0">Accueil</button>
+    <button data-index="1">Présentation</button>
+    <button data-index="2">Nous contacter</button>
+    <div>
+        <h1>Accueil </h1>
+        <p>Bienvenu sur le site</p>
+    </div>
+    <div>
+        <h1>Présentation</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, itaque.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1aCHN6dytVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div>
+        <h1>Nous contacter</h1>
+        <form action="">
+            <input type="text">
+            <input type="submit">
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.989285268654!2d2.414183450541253!3d48.858414708558506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d7eebb345ad%3A0xeb6b5b5bf9fe7ee2!2sDORANCO%20Ecole%20Sup%C3%A9rieure%20des%20Technologies%20Cr%C3%A9atives%20%26%20Organisme%20de%20Formation%20Bagnolet!5e0!3m2!1sfr!2sfr!4v1605020844501!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        // masquer toutes les div dans la page 
+        // afficher uniquement la première div 
+        $("div").hide().first().show();
+        // lorsque je vais cliquer sur un bouton 
+        $("button").on("click", function(){
+            let index = $(this).data("index");
+            $("div").hide().eq(index).show();
+        });
+        // système d'onglet complet !
+    </script>
+</body>
+</html>
+<!-- 
+    // https://developer.mozilla.org/fr/docs/Apprendre/HTML/Comment/Utiliser_attributs_donnes
+    créer le fichier 14-exo.html
+    4 bouton 
+        Accueil
+        Map
+        Video
+        Liste
+    4 div
+        1er div => h1 avec le texte Accueil et un p de 10 mots fictifs
+        2ème div => h1 avec le texte Map et une iframe de google map
+        3ème div => h1 avec le texte Vidéo et une iframe de Youtube
+        4ème div => h1 avec le texte Liste et une liste ul avec 3 items > 1 mot fictifs
+    installer jquery
+    et mettre en place un système d'onglet 
+     si je clique le 1er bouton => afficher la 1ère div et masquer les autres
+     si je clique le 2ème bouton => afficher la 2ème div et masquer les autres
+     si je clique le 3ème bouton => afficher la 3ème div et masquer les autres
+     si je clique le 4ème bouton => afficher la 4ème div et masquer les autres
+-->

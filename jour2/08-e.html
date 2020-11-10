@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Action1</button>
+    <input type="text">
+    <p></p>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        $("input").on("keyup" , function(e){
+            //console.log(e);// je peux récupérer la lettre que j'ai utilisée dans le champ input
+            console.log(e.originalEvent.key)
+            // e = une description de l'événement déclenché par l'internaute : quelle touche il a utilisé ?
+            // où est sa souris ?? 
+            $("p").html($("input").val());
+        })
+
+        $("button").on("click", function( event ){
+            // objet e / event / evenement / ev
+            // objet => JAVASCRIPT de base (pas du jQuery)
+            console.log( event ); // récupérer des informations sur l'événement qui vient d'être déclenché 
+            console.log( event.currentTarget ); // l'événement a été déclenché sur laquel élément html ??
+            console.log( event.type ); // click
+            console.log( event.offsetX ); // click
+            console.log( event.offsetY ); // click
+            // méthode event.preventDefault() => bloquer le comportement par défaut du navigateur 
+            alert("j'ai cliqué");
+        })
+    </script>
+</body>
+</html>

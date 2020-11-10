@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .introduction{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p id="toto" class="tata" title="titre" style="color:green">Lorem, ipsum dolor.</p>
+    <p class="second description" class="tata">Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+    <img src="" alt="" id="tata" class="tata">
+    <img src="" alt="" class="tata" id="toto">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // id unique
+        // class utiliser sur plusieur balises 
+    $("p").first().addClass("introduction");
+        // regarder dans l'inspecteur du navigateur => le 1er p dispose d'une class introduction
+        // 2ème p on a supprimé ses deux class
+    $("p").eq(1).removeClass("second").removeClass("description");
+        // pour le 3ème p => ajouter un id final 
+    $("p").last().attr( "id" , "final" );
+    $("p").last().attr( "style" , "color:red");
+
+    $("img").first().attr("src" , "https://via.placeholder.com/200x200")
+        // .first() .last() .eq()
+    $("img").last().prop("src" , "https://via.placeholder.com/100x100")
+        // comment modifier le contenu
+        // d'une balise html => .html() .text() .prepend()
+        // .append() .after() .before()
+
+        // modifier les attributs d'une balises  
+        // ajouter / modifier / supprimer via jquery =>  des attributs à une balise
+
+        // plein de méthode 
+
+        // .css() => ajouter l'attribut style à une balise 
+        // .addClass() // .removeClass => ajouter // supprimer l'attribut class à une balise
+        // .attr() - .prop()
+        // .data()
+    </script>
+</body>
+</html>
+
+<!--
+    google => emojipedia  🐶 🏉 ⌚
+
+créer une nouvelle page html 03-exo.html 
+cette page contient 5 paragraphes de 5 mots fictifs chacun 
+
+via jQuery :
+- mettre tous les p en couleur texte rouge 
+- mettre le 1er p sur fond rose
+- mettre le dernier p sur fond vert
+- ajouter le 2ème p au début du p un émoji de votre choix
+- ajouter le 4ème p au à la fin du p un émoji de votre choix
+- pour le 3ème p ajouter lui la class troisieme et l'attribut id third
+
+Rendu visuel final
+-->

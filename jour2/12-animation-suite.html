@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- button*3>{action $} -->
+    <button>action 1</button>
+    <button>action 2</button>
+    <button>action 3</button>
+    <div>
+        <img src="https://via.placeholder.com/200x150" alt="">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        $("button").first().click(function(){
+            // masquer l'image avec un effet d'opacité 
+            // devenir transparent => disparaitre
+            $("img").fadeOut(5000);
+        })
+        $("button").eq(1).click(function(){
+            // faire apparaitre l'image avec un effet d'opacité
+            $("img").fadeIn(3000);
+        })
+        $("button").eq(2).click(function(){
+            $("img").fadeToggle(2000);
+        })
+        // bon café rdv 15h45 pour la suite et fin de jquery !
+        // re !!!
+        // 13-onglets.html
+    </script>
+</body>
+</html>
+<!---->

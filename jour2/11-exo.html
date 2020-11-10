@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--  button*3>{Action $} -->
+    <button>Action 1</button>
+    <button>Action 2</button>
+    <button>Action 3</button> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus enim distinctio cum illo, itaque sunt.</p>
+    <h1>titre</h1>
+    <img src="https://via.placeholder.com/200x300" alt="">
+    <h2>conclusion</h2>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        $("button").first().on("click", function(){
+            let style = {
+                "width" : 300 ,
+                "border" : "2px solid green"
+            } ;
+            $("img").css(style) ;
+        } );
+        $("button").eq(1).on("click", function(){
+            /* $("img").hide();
+            $("p").hide(); */
+        } ) ;
+        $("button").last().on("click", function(){
+            $("img").toggle(); // toggle => masque toi si tu es affiché // affiché toi si tu es masqué
+            $("p").toggle();
+
+            // show() hide() toggle()
+            // si l'image 
+        })
+    </script>
+</body>
+</html>
+<!-- 12-animation-suite.html -->

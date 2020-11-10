@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // .prepend() .prepend() et un after() ??
+        $("h1")
+            .prepend("début ") // 1
+            .prepend("encore avant ") // 2
+            .after("<hr>");
+    </script>
+</body>
+</html>
+<!-- 
+    créer une nouvelle page html 01-exo.html 
+
+    Dans cette page vous avez titre h1 
+    et à la suite vous avez un tableau <table>
+    ce tableau contient 3 lignes et 4 colonnes 
+
+    installer jquery
+
+    1 après la balise h1 ajouter un trait de séparation
+    2 remplir le contenu de la première colonne avec le texte "chiffre d'affaires"
+    3 remplir le contenu de la dernière ligne avec le texte "total"
+    4 remplir le contenu de la première colonne de la dernière ligne avec le texte "hello"
+
+-->

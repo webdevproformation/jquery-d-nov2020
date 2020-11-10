@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Titre principal</h1>
+    <!-- section.s1>p*5>lorem5 -->
+    <section class="s1">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Non veritatis odio perspiciatis quis!</p>
+        <p>Laudantium necessitatibus perspiciatis sit. Laborum!</p>
+        <p>Dolore optio esse officiis tempora.</p>
+        <p>Obcaecati id minus at et.</p>
+    </section>
+    <!-- section.s2>p*3>lorem5 -->
+    <section class="s2">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Est, optio! Vitae, corporis nam!</p>
+        <p>Maiores nemo quaerat incidunt! Harum.</p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //  1/ pour le h1 le center dans la page web , le souligné , lui donner une couleur verte
+        let styleH1 = { 
+            "text-align" : "center",
+            "text-decoration" : "underline",
+            "color" : "green"
+        }
+        $("h1").css(styleH1);
+        let stylePS1 = {
+            "font-family" : "Arial",
+            "margin" : "30px 0", // "margin-top" : 30 , "margin-bottom" :30
+            "font-weight" : "bold"
+        }
+        $(".s1 p").css(stylePS1).css(styleH1);
+       let stylePS2 = { // 16px => <p> efoehzofh</p> 16px * 120 % = 1.2 em
+           "font-size" : "1.2em", // "120%" fonctionne aussi
+           "padding" : "0 30px", //"padding-right" : 30 , "padding-left" :30
+           "letter-spacing" : 5 // em => cadratin => unité utilisé en imprimeries M
+       }
+       $(".s2 p").css(stylePS2);
+    </script>
+</body>
+</html>
+<!-- 06-event.html -->

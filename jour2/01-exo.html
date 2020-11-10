@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <!-- tableau 3 lignes et 4 colonnes -->
+    <!-- table>tr*3>td*4 -->
+    <table>
+        <tr><!-- table row => ligne de tableau -->
+            <td></td> <!-- table div => cellule de tableau-->
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- table>tr*3>td*4 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // facultatif 
+        $("h1").html("titre de la page")
+        $("td").html("cellule").css("border", "1px solid black");
+        // fin facultatif 
+        $("h1").after("<hr>");
+        //2 remplir le contenu de la première colonne avec le texte "chiffre d'affaires"
+        $("tr td:first-child").html("chiffre d'affaires")
+        //3 remplir le contenu de la dernière ligne avec le texte "total"
+        $("tr:last-child td").html("total");
+        //4 remplir le contenu de la première colonne de la dernière ligne avec le texte "hello"
+        $("tr:last-child td:first-child").html("hello");
+    </script>
+</body>
+</html>
+<!-- 02-attribut.html -->

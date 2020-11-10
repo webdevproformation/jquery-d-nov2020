@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!-- un formulaire de contact en html -->
+    <form action="">
+        <div>
+            <label for="email">email</label>
+            <input type="email"  class="email" id="email">
+        </div>
+        <div>
+            <label for="commentaire">Votre commentaire</label> <br>
+            <textarea class="commentaire" cols="30" rows="10" id="commentaire"></textarea>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+    <div class="resultat"></div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        // e.preventDefault()
+        // lorsque vous être dans un formaire <form>
+        // lorsque vous cliquez sur le bouton Envoyer 
+        // automatiquement le navigateur va vouloir Soumettre le contenu du formulaire ( envoyer les valeurs dans les différents champ du formulaire pour qu'il les traite)
+        // ça se voit => remplissez le formulaire cliquer sur Envoyer => le formulaire se vide 
+        // informations saisis sont Envoyées vers un serveur 
+        // pour éviter ce comportement par défaut :
+        // e.preventDefault()
+        // éviter que le formulaire soit soumis à un serveur 
+        // $("form").on("submit", function(e){});
+        $("form").on("submit", function(e){
+            e.preventDefault(); // javascript de base 
+            let email = $(".email").val();
+            let commentaire = $(".commentaire").val();
+            // concaténation 
+            let resultat = "<p>" + email + "</p>";
+                resultat += "<div>" + commentaire + "</div>";
+            $(".resultat").html(resultat);
+        });
+    </script>
+</body>
+</html>
+<!-- créer le fichier 09-exo.html 
+    formulaire contenir deux champs 
+    input de type text et qui a une  class prenom
+    input de type text et qui a une class nom
+    input de type submit => bouton envoyer
+    installer jquery
+    lorsque vous allez soumettre votre formulaire
+        bloquer le comportement par défaut (rechargement de page)
+        récupérer la valeur saisie dans le champ prenom
+        récupérer la valeur saisie dans le champ nom
+        réaliser la concaténation suivante :
+        bonjour prénom_saisi et le nom_saisi
+        le résultat de la concaténation afficher dans un alert()
+-->

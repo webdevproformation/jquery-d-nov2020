@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Titre principal</h1>
+    <h2>Sous titre</h2>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // .css()
+        // permet d'ajouter du style à sur balise sélectionnée
+
+        // pour la balise h1 => taille de police 20px
+        // changer sa couleur => rouge
+        // ajouter un peu d'ombre portée text-shadow 
+        $("h1")
+            .css("font-size" , 20)
+            .css("color", "red")
+            .css("text-shadow" , "3px 3px 5px grey");
+        // 1ère manière d'utiliser .css()
+        // deuxième manière d'utiliser la méthode .css() d'utiliser un objet 
+        let style = { 
+            "font-size" : 30,
+            "font-family" : "Arial",
+            "color" : "green"
+        };
+        $("h2").css(style);
+        // pour éviter de répéter .css() plusieurs fois 
+        // utiliser un objet comme argument de la méthode .css()
+    </script>
+</body>
+</html>
+<!-- 
+    créer le fichier 05-exo.html
+    dans ce fichier vous allez avoir le html suivant :
+    h1 qui contient le texte Titre principal
+    section qui a la  class s1 qui contient 5 paragraphes de 5 mots fictifs
+    section qui a la class s2 qui contient 2 p de 5 mots fictifs
+    installer jquery
+    1/ pour le h1 le center dans la page web , le souligné , lui donner une couleur verte
+    2/ pour les 5 p dans la section qui a la class s1 
+    changer le police de caractère => Arial
+    augmenter leur margeur top et bottom de 30px
+    le mettre en gras
+    3/ pour les 3 p dans la section qui a la class s2
+    augmenter la taille de police de 20%
+    ajouter un peu de padding à gauche et droite de 30px
+    espacer les lettres de 5px 
+-->

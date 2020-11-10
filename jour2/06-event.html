@@ -1,0 +1,100 @@
+<!-- 06-event.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn1">Action 1</button>
+    <p class="p1">Lorem, ipsum dolor.</p>
+    <button class="btn2">Action 2</button>
+    <p class="p2">Lorem, ipsum dolor.</p>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>
+        // Evenement en javascript  => jquery 
+        // en js de base => ajouter un écouteur d'événement
+        // document.querySelector(".btn1").addEventListener("click", function(){});
+
+        // en jquery => voila la première syntaxe possible 
+        $(".btn1").click( function(){ } );
+
+        // en jquery deuxième syntaxe possible 
+        $(".btn1").on(" click" , function(){}) ;
+
+        // lorsque je clique sur le bouton 1
+        // changer la couleur du p1 en rouge
+
+        $(".btn1").click( function(){
+            $(".p1").css("color", "red");
+        });
+
+        // lorsque je clique sur le bouton 2
+        // remet la couleur du p1 en noir
+        $(".btn2").click( function(){
+            $(".p1").css("color", "black");
+        })
+        // si je passe ma souris sur le paragraphe p2
+        // augmenter la taille de police => +20%
+        // su je sors ma souris de la paragraphe p2
+        // il reprend sa taille de base 
+
+        $(".p2").mouseover( function(){
+                    $(".p2").css("font-size", "1.2em")
+                })
+                .mouseleave( function(){
+                    $(".p2").css("font-size", "1em")
+                })
+        // tout de ce fait jquery => équivalent en js de base
+        // jquery librairie qui permet de manipuler le DOM
+        // plus facilement que javascript 
+
+        // js ça sert à quoi => rendre le html et le css dynamique 
+        // html et du css => une fois que la page est chargé => ça bouge plus 
+        // au moment ton internaute fait une action cliquer un bouton
+        // passer la souris 
+        // animation : changer l'aspect d'un élement 
+        // ajouter du css // ajouter du html  => js qui le fait 
+        // jquery version simplifée de js 
+        // => au début => 1/ jquery  => 2/ javascript
+        // même langage => jquery LA librairie la plus utilisée dans le monde =>  jquery forte de chance de l'utiliser
+        // javascript => en 2015 => ES6 => ajouter plein de nouveaux mots clé dans la langage js => la tendance / la mode => tout revenir sur du javascript de base (sans utiliser jQuery )
+        // jquery idéal petit projet 
+        // projet full javascript => uniquement du js pour générer toutes pages
+        // Angular / React / Vue => il faut bien comprendre javascript de base : document.querySelector()
+        // jQuery est stable MAIS => ORGANISATION DU CODE // pas de règle pour organiser votre code 
+        // Angular / React / Vue => Forcer les développeurs à avoir un ORGANISATION => Module 
+        // découpage du code en plusieurs fichiers 
+        // générer la RAM (comment les données vont être stockées dans la mémoire vive du navigateur => shadow DOM)
+        // TOUTES LES LIBRAIRIES : Angular / React / Vue / jQuery => base JAVASCRIPT de base 
+        // $()
+        // React => style de codage (créé par Facebook)
+        // Angular => style  (créé par Google)
+        // beaucoup de travail => 
+        // 1 code tout à la main 
+        // 2 Wordpress => Woo commerce
+        // 3 Prestashop 
+    </script>
+</body>
+</html>
+<!-- 
+    créer le fichier 07-exo.html
+    
+    bouton 1 qui contient le texte Action1
+    bouton 2 qui contient le texte Action2
+    bouton 3 qui contient le texte Action2
+    p qui contient un texte fictif de 30 mots
+
+    installer jquery
+    clique sur le bouton 1 => ajouter à la fin du paragraphe le texte "j'ai cliqué sur le bouton 1 avec un emoji"
+    clique sur le bouton 2 => changer la taille de police du paragraphe
+    augmenter de 60% + changer sa couleur en rouge
+    clique sur le bouton 3 => revenir à la taille initial + couleur initiale pour le paragraphe 
+    rdv 13h30 pour le corrigé => la fin de la journée
+    => 16h50 qcm en ligne pour voir si vous avez bien suivi ! 
+    // Félipe => 10 min c'est suffisant !! 
+    // rebonjour tout le monde !! 
+    // corrigé ! 
+
+-->
